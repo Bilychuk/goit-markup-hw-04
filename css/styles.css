@@ -90,6 +90,14 @@ span {
 .menu-link:focus {
   color: #404bbf;
 }
+
+.menu-link:hover::after {
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--OCEAN, #404bbf);
+  content: '';
+}
 .contacts {
   font-style: normal;
   margin-left: auto;
@@ -126,6 +134,7 @@ span {
   background-position: center;
   background-size: cover;
 }
+
 .hero-title {
   display: inline-block;
   font-size: 56px;
@@ -187,6 +196,16 @@ span {
   align-items: flex-start;
   gap: 8px;
 }
+.benefits-icon {
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background: #f4f4fd;
+  width: 264px;
+  height: 112px;
+  padding: 24px 0;
+  fill: #2e2f42;
+}
+
 .benefits-title {
   font-size: 20px;
   font-weight: 500;
@@ -244,9 +263,24 @@ span {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
   color: #434455;
 }
-
+.team-icons {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.social-media-team {
+  padding: 12px 0;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
+  border-radius: 50%;
+}
+.social-media-team:hover,
+.social-media-team:focus {
+  background-color: #404bbf;
+}
 /* Portfolio */
 .portfolio {
   padding: 120px 0;
@@ -326,4 +360,37 @@ span {
   width: 264px;
   height: 72px;
   color: #f4f4fd;
+}
+
+.social-media-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.social-media-footer {
+  padding: 8px 0px;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
+  border-radius: 50%;
+}
+.social-media-footer:hover,
+.social-media-footer:focus {
+  background-color: #31d0aa;
+}
+.media {
+  display: inline-block;
+  justify-content: column;
+}
+.page-footer .container {
+  display: flex;
+  gap: 120px;
+  align-items: flex-start;
 }
