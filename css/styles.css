@@ -346,6 +346,9 @@ span {
   flex-direction: column;
   align-items: flex-start;
   width: calc((100% - 48px) / 3);
+  transition-property: border box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item:hover,
 .portfolio-item:focus {
@@ -370,15 +373,13 @@ span {
   padding-right: 32px;
   padding-left: 32px;
   background: #4d5ae5;
-}
-.portfolio-img:hover .overlay {
-  transform: translateY(0);
-}
-.overlay-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.portfolio-img:hover .overlay {
+  transform: translateY(0);
 }
 .portfolio-box {
   display: flex;
