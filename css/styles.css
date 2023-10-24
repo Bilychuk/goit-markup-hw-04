@@ -101,15 +101,15 @@ span {
   color: #404bbf;
 }
 
-.menu-link:hover::after,
-.menu-link:focus::after {
+.menu-link::after,
+.menu-link::after {
   position: absolute;
   left: 0;
   bottom: -1px;
   width: 48px;
   height: 4px;
   border-radius: 2px;
-  background: var(--OCEAN, #404bbf);
+  background: #404bbf;
   content: '';
 }
 .contacts {
