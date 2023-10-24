@@ -100,9 +100,10 @@ span {
 .menu-link:focus {
   color: #404bbf;
 }
-
-.menu-link::after,
-.menu-link::after {
+.menu-item:first-child .menu-link {
+  color: #404bbf;
+}
+.menu-item:first-child .menu-link::after {
   position: absolute;
   left: 0;
   bottom: -1px;
