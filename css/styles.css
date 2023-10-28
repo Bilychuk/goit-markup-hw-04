@@ -91,10 +91,10 @@ span {
   letter-spacing: 0.02em;
   padding: 24px 0;
   display: block;
-  color: #2e2f42;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2e2f42;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -127,10 +127,10 @@ span {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
-  color: #434455;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #434455;
 }
 .contact-info .contact-link:hover,
 .contact-info .contact-link:focus {
@@ -149,7 +149,7 @@ span {
     ),
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
@@ -234,6 +234,7 @@ span {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
   color: #2e2f42;
 }
 .benefits-text {
@@ -376,7 +377,8 @@ span {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.portfolio-img:hover .overlay {
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay {
   transform: translateY(0);
 }
 .portfolio-box {
